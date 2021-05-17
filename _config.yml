@@ -1,0 +1,17 @@
+exclude:
+  - script
+
+sass:
+  style: :compressed
+
+github:
+  private: false
+  license:
+    name: CC0-1.0
+  source:
+    branch: "main"
+    path: "/"
+  repository_url: "https://github.com/ksengine/primerkyll"
+  
+title: Primerkyll
+description: Primerkyll is a Jekyll theme.
