@@ -1,8 +1,8 @@
 <div class="Header-item">
   <a href="{{ site.url | default: '#' }}" class="Header-link f4 d-flex flex-items-center">
     {% if site.logo %}
-      <img src="{{ site.logo | default: 'Home' }}" height="32" class="mr-2" width="32" aria-hidden="true">
+      <img src="{{ site.logo }}" height="32" class="mr-2" width="32" aria-hidden="true">
     {% endif %}
-    <span>{{ site.title }}</span>
+    <span>{{ site.title | default: 'Home' }}</span>
   </a>
 </div>
