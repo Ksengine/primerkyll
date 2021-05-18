@@ -1,4 +1,5 @@
 <div class="Header">
+  {% include "sitename" %}
   {% for item in site.data.topnav.left %}
     {% if item.src %}
       {{ item.src }}
