@@ -1,0 +1,20 @@
+<div class="Header">
+  {% for item in site.data.topnav.left %}
+    {% if item.src %}
+      {{ item.src }}
+    {% else %}
+      <div class="Header-item">
+        <a href="{{ item.url }}" class="Header-link">{{ item.title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+  {% for item in site.data.topnav.right %}
+    {% if item.src %}
+      {{ item.src }}
+    {% else %}
+      <div class="Header-item mr-0">
+        <a href="{{ item.url }}" class="Header-link">{{ item.title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
