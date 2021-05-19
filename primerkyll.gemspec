@@ -8,12 +8,14 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/ksengine/primerkyll'
   s.summary       = "Primerkyll is a Jekyll theme based on GitHub's Primer styles"
 
+  s.metadata["plugin_type"] = "theme"
+
   s.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
+    f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 
   s.platform      = Gem::Platform::RUBY
-  s.license       = ' CC0-1.0'
+  s.license       = 'Unlicense'
 
   s.add_dependency 'jekyll', '> 3.5', '< 5.0'
   s.add_runtime_dependency 'jekyll-github-metadata', '~> 2.9'
