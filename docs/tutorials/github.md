@@ -1,4 +1,4 @@
-# Github b pages tutorial
+# Github pages tutorial
 
 ## Step 1: Set up a GitHub account
 
