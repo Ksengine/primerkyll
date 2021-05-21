@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}" data-color-mode="{{ site.data-color-mode | default: "auto" }}" data-light-theme"{{ site.data-light-theme | default: "light" }}"  data-dark-theme"{{ site.data-light-theme | default: "dark" }}">
 
-  {%- include head.html -%}
 
   <body>
 
@@ -11,6 +10,7 @@
 
       {{ content }}
 
+      {%- include footer.html -%}
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
