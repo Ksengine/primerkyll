@@ -23,10 +23,10 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-    <div class="list__item">
-      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h2 class="archive__item-title" itemprop="headline"><a href="{{ site.baseurl }}${url}">${title}</a></h2>
-        <div class="archive__item-excerpt" itemprop="description">${content}</div>
+    <div class="autocomplete-item">
+      <article class="Box" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="Box-title" itemprop="headline"><a href="{{ site.baseurl }}${url}">${title}</a></h2>
+        <div class="Box-body" itemprop="description">${content}</div>
       </article>
     </div>
   `;
