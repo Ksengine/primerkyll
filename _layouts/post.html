@@ -1,38 +1,26 @@
 ---
 layout: default
 ---
-<div class="Box">
-  <div class="Box-header">
-    <h3 class="Box-title">
-      Box title
-    </h3>
-  </div>
-  <div class="Box-body">
-    Box body
-  </div>
-  <div class="Box-footer">
-    Box footer
-  </div>
-</div>
-
 <article class="Box" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="Box-header">
     <h1 class="Box-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="Box>
-      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-      <time class="State" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        Date: {{ page.date | date: date_format }}
-      </time>
+      {%- if page.date -%}
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        <time class="State" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          Date: {{ page.date | date: date_format }}
+        </time><br>
+      {%- endif -%}
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class=State" datetime="{{ mdate }}" itemprop="dateModified">
           Date Modified: {{ mdate | date: date_format }}
-        </time>
+        </time><br>
       {%- endif -%}
       {%- if page.author -%}
-        <span class="State">Authors: 
+        <span class="State">Author:-
           {% for author in page.author %}
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span class="Label" itemprop="name">{{ author }}</span></span>
@@ -45,11 +33,11 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="Box-footer" itemprop="articleFooter">
-    {%- if site.disqus.shortname -%}
+  {%- if site.disqus.shortname -%}
+    <div class="Box-footer" itemprop="articleFooter">
       {%- include disqus_comments.html -%}
-    {%- endif -%}
-  </div>
+    </div>
+  {%- endif -%}
 
   <a href="{{ page.url | relative_url }}" hidden></a>
 </article>
