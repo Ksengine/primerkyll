@@ -51,7 +51,7 @@ Use `git status` to list all new or modified files that haven't yet been committ
 function test() {
   console.log("notice the blank line before this function?");
 }
-&#96&#96&#96</pre></code>
+&#96&#96&#96</code></pre>
 
 ![Rendered fenced code block](https://docs.github.com/assets/images/help/writing/fenced-code-block-rendered.png)
 
@@ -67,7 +67,7 @@ For example, to syntax highlight Ruby code:
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-&#96&#96&#96</pre></code>
+&#96&#96&#96</code></pre>
 
 ![Rendered code block with Ruby syntax highlighting](https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png)
 
