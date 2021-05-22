@@ -64,11 +64,6 @@ You can add an optional language identifier to enable syntax highlighting in you
 
 For example, to syntax highlight Ruby code:
 
-<pre markdown="0"><code>```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```</code></pre>
 <div class="highlighter-rouge"  markdown="0"><pre class="highlight"><code>```ruby
 <span class="nb">require</span> <span class="s1">'redcarpet'</span>
 <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
