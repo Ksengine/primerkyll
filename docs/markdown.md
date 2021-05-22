@@ -3,9 +3,6 @@
 
 Create sophisticated formatting for your prose and code on web with simple syntax.
 
-## Try it
-<iframe src="http://kramdown.electricbook.works/" width="100%" height ="50%"></iframe>
-
 ### Headings
 
 ```markdown
@@ -50,11 +47,11 @@ Use `git status` to list all new or modified files that haven't yet been committ
 
 **Fenced code blocks**
 
-<pre><code>```
+<pre><code>&#96&#96&#96
 function test() {
   console.log("notice the blank line before this function?");
 }
-```</pre></code>
+&#96&#96&#96</pre></code>
 
 ![Rendered fenced code block](https://docs.github.com/assets/images/help/writing/fenced-code-block-rendered.png)
 
@@ -66,11 +63,11 @@ You can add an optional language identifier to enable syntax highlighting in you
 
 For example, to syntax highlight Ruby code:
 
-<pre><code>```ruby
+<pre><code>&#96&#96&#96ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-```</pre></code>
+&#96&#96&#96</pre></code>
 
 ![Rendered code block with Ruby syntax highlighting](https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png)
 
