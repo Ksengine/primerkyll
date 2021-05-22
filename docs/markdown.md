@@ -47,11 +47,13 @@ Use `git status` to list all new or modified files that haven't yet been committ
 
 **Fenced code blocks**
 
-<pre><code>&#96&#96&#96
+![](backtick.png)
+```js
 function test() {
   console.log("notice the blank line before this function?");
 }
-&#96&#96&#96</code></pre>
+```
+![](backtick.png)
 
 ![Rendered fenced code block](https://docs.github.com/assets/images/help/writing/fenced-code-block-rendered.png)
 
@@ -63,11 +65,13 @@ You can add an optional language identifier to enable syntax highlighting in you
 
 For example, to syntax highlight Ruby code:
 
-<pre><code>&#96&#96&#96ruby
+![](backtick.png)
+```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-&#96&#96&#96</code></pre>
+```
+![](backtick.png)
 
 ![Rendered code block with Ruby syntax highlighting](https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png)
 
