@@ -47,11 +47,12 @@ Use `git status` to list all new or modified files that haven't yet been committ
 
 **Fenced code blocks**
 
-<pre markdown="0"><code>```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+<div markdown="0" class="highlighter-rouge"><pre class="highlight"><code>```
+<span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"notice the blank line before this function?"</span><span class="p">);</span>
+<span class="p">}</span>
 ```</code></pre>
+</div>
 
 ![Rendered fenced code block](https://docs.github.com/assets/images/help/writing/fenced-code-block-rendered.png)
 
@@ -68,6 +69,12 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```</code></pre>
+<div class="highlighter-rouge"  markdown="0"><pre class="highlight"><code>```ruby
+<span class="nb">require</span> <span class="s1">'redcarpet'</span>
+<span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">markdown</span><span class="p">.</span><span class="nf">to_html</span>
+```</code></pre>
+</div>
 
 ![Rendered code block with Ruby syntax highlighting](https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png)
 
