@@ -1,0 +1,247 @@
+---
+layout: default
+title: 'Markdown guide'
+```
+<h1 id="markdown-guide">Markdown guide</h1>
+
+<p>Create sophisticated formatting for your prose and code on web with simple syntax.</p>
+
+<h3 id="headings">Headings<a class="anchorjs-link " href="#headings" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># The largest heading</span>
+<span class="gu">## The second largest heading</span>
+<span class="gu">###### The smallest heading</span>
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/headings-rendered.png" alt="Rendered H1, H2, and H6 headings"></p>
+
+<h3 id="styling-text">Styling text<a class="anchorjs-link " href="#styling-text" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Syntax</th>
+      <th>Keyboard shortcut</th>
+      <th>Example</th>
+      <th>Output</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bold</td>
+      <td><code class="language-plaintext highlighter-rouge">** **</code>  or  <code class="language-plaintext highlighter-rouge">__ __</code></td>
+      <td>command/control + b</td>
+      <td><code class="language-plaintext highlighter-rouge">**This is bold text**</code></td>
+      <td><strong>This is bold text</strong></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Italic</td>
+      <td><code class="language-plaintext highlighter-rouge">* *</code>  or  <code class="language-plaintext highlighter-rouge">_ _</code></td>
+      <td>command/control + i</td>
+      <td><code class="language-plaintext highlighter-rouge">*This text is italicized*</code></td>
+      <td><em>This text is italicized</em></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Strikethrough</td>
+      <td><code class="language-plaintext highlighter-rouge">~~ ~~</code></td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">~~This was mistaken text~~</code></td>
+      <td><del>This was mistaken text</del></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Bold and nested italic</td>
+      <td><code class="language-plaintext highlighter-rouge">** **</code>  and  <code class="language-plaintext highlighter-rouge">_ _</code></td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">**This text is _extremely_ important**</code></td>
+      <td><strong>This text is  <em>extremely</em>  important</strong></td>
+      <td>All bold and italic</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">*** ***</code></td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">***All this text is important***</code></td>
+      <td><strong><em>All this text is important_</em></strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quoting-text">Quoting text<a class="anchorjs-link " href="#quoting-text" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In the words of Abraham Lincoln:
+<span class="gt">
+&gt; Pardon my French</span>
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/quoted-text-rendered.png" alt="Rendered quoted text"></p>
+
+<h3 id="quoting-code">Quoting code<a class="anchorjs-link " href="#quoting-code" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Use <span class="sb">`git status`</span> to list all new or modified files that haven't yet been committed.
+</code></pre></div></div>
+<blockquote>
+  <p>The text within the backticks will not be formatted.</p>
+</blockquote>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/inline-code-rendered.png" alt="Rendered inline code block"></p>
+
+<p><strong>Fenced code blocks</strong></p>
+
+<p><img src="/primerkyll/backtick.png" alt=""></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">notice the blank line before this function?</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><img src="/primerkyll/backtick.png" alt=""></p>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/fenced-code-block-rendered.png" alt="Rendered fenced code block"></p>
+
+<p><strong>Tip:</strong>  To preserve your formatting within a list, make sure to indent non-fenced code blocks by eight spaces.</p>
+
+<p><strong>Syntax highlighting</strong></p>
+
+<p>You can add an optional language identifier to enable syntax highlighting in your fenced code block.</p>
+
+<p>For example, to syntax highlight Ruby code:</p>
+
+<p><img src="/primerkyll/backtick.png" alt=""></p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s1">'redcarpet'</span>
+<span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">markdown</span><span class="p">.</span><span class="nf">to_html</span>
+</code></pre></div></div>
+<p><img src="/primerkyll/backtick.png" alt=""></p>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/code-block-syntax-highlighting-rendered.png" alt="Rendered code block with Ruby syntax highlighting"></p>
+
+<h3 id="links">Links<a class="anchorjs-link " href="#links" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You can create an inline link by wrapping link text in brackets  <code class="language-plaintext highlighter-rouge">[ ]</code>, and then wrapping the URL in parentheses  <code class="language-plaintext highlighter-rouge">( )</code>. You can also use the keyboard shortcut  <code class="language-plaintext highlighter-rouge">command + k</code>  to create a link.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This site was built using <span class="p">[</span><span class="nv">GitHub Pages</span><span class="p">](</span><span class="sx">https://pages.github.com/</span><span class="p">)</span>.
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/link-rendered.png" alt="Rendered link"></p>
+
+<blockquote>
+  <p><strong>Tip:</strong>  Markdown automatically creates links from standard URLs.</p>
+  <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Visit https://github.com
+</code></pre></div>  </div>
+  <p><img src="https://docs.github.com/assets/images/help/writing/url-autolink-rendered.png" alt="Rendered autolinked URL"></p>
+</blockquote>
+
+<h3 id="section-links">Section links<a class="anchorjs-link " href="#section-links" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link to below header</span><span class="p">](</span><span class="sx">#my-header</span><span class="p">)</span>
+
+<span class="gu">### My Header</span>
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/repository/readme-links.png" alt="Section link within the README file for the github/scientist repository"></p>
+
+<h3 id="relative-links">Relative links<a class="anchorjs-link " href="#relative-links" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You can define relative links and image paths in your rendered files to help readers navigate to other files in your website.</p>
+
+<p>A relative link is a link that is relative to the current file. For example, if you have a index file in root of your repository, and you have another file in  <em>docs/CONTRIBUTING.md</em>, the relative link to  <em>CONTRIBUTING.md</em>  in your index file might look like this:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Contribution guidelines for this project</span><span class="p">](</span><span class="sx">docs/CONTRIBUTING.md</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>You can use all relative link operands, such as  <code class="language-plaintext highlighter-rouge">./</code>  and  <code class="language-plaintext highlighter-rouge">../</code>.</p>
+
+<h3 id="lists">Lists<a class="anchorjs-link " href="#lists" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p><strong>Unordered list</strong></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> George Washington
+<span class="p">-</span> John Adams
+<span class="p">-</span> Thomas Jefferson
+</code></pre></div></div>
+<p>or</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> George Washington
+<span class="p">*</span> John Adams
+<span class="p">*</span> Thomas Jefferson
+</code></pre></div></div>
+<p><img src="https://docs.github.com/assets/images/help/writing/unordered-list-rendered.png" alt="Rendered unordered list"></p>
+
+<p><strong>Ordered list</strong></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> James Madison
+<span class="p">2.</span> James Monroe
+<span class="p">3.</span> John Quincy Adams
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/ordered-list-rendered.png" alt="Rendered ordered list"></p>
+
+<h4 id="nested-lists">Nested Lists<a class="anchorjs-link " href="#nested-lists" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>You can create a nested list by indenting one or more list items below another item.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> First list item
+<span class="p">   -</span> First nested list item
+<span class="p">     -</span> Second nested list item
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/nested-list-alignment.png" alt="Nested list with alignment highlighted"></p>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/nested-list-example-1.png" alt="List with two levels of nested items"></p>
+
+<p>In this example, you could add a nested list item under the list item  <code class="language-plaintext highlighter-rouge">100. First list item</code>  by indenting the nested list item a minimum of five spaces, since there are five characters (<code class="language-plaintext highlighter-rouge">100.</code> ) before  <code class="language-plaintext highlighter-rouge">First list item</code>.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">100.</span> First list item
+<span class="p">     -</span> First nested list item
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/nested-list-example-3.png" alt="List with a nested list item"></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">100.</span> First list item
+<span class="p">     -</span> First nested list item
+<span class="p">       -</span> Second nested list item
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/nested-list-example-2.png" alt="List with two levels of nested items"></p>
+
+<p>For more examples, see the  <a href="https://github.github.com/gfm/#example-265">GitHub Flavored Markdown Spec</a>.</p>
+
+<h3 id="task-lists">Task lists<a class="anchorjs-link " href="#task-lists" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [x] Finish my changes
+<span class="p">-</span> [ ] Push my commits to GitHub
+<span class="p">-</span> [ ] Open a pull request
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/task-list-rendered.png" alt="Rendered task list"></p>
+
+<p>If a task list item description begins with a parenthesis, you’ll need to escape it with  <code class="language-plaintext highlighter-rouge">\</code>:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [ ] <span class="se">\(</span>Optional) Open a followup issue
+</code></pre></div></div>
+
+<h3 id="using-emoji">Using emoji<a class="anchorjs-link " href="#using-emoji" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You can add emoji to your writing by typing  <code class="language-plaintext highlighter-rouge">:EMOJICODE:</code>.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+</code></pre></div></div>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/emoji-rendered.png" alt="Rendered emoji"></p>
+
+<p>For a full list of available emoji and codes, check out  <a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">the Emoji-Cheat-Sheet</a>.</p>
+
+<h3 id="paragraphs">Paragraphs<a class="anchorjs-link " href="#paragraphs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You can create a new paragraph by leaving a blank line between lines of text.</p>
+
+<h3 id="ignoring-markdown-formatting">Ignoring Markdown formatting<a class="anchorjs-link " href="#ignoring-markdown-formatting" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You can ignore (or escape) Markdown formatting by using  <code class="language-plaintext highlighter-rouge">\</code>  before the Markdown character.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Let's rename \*our-new-project\* to \*our-old-project\*.</code></p>
+
+<p><img src="https://docs.github.com/assets/images/help/writing/escaped-character-rendered.png" alt="Rendered escaped character"></p>
