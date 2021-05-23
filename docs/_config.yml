@@ -1,1 +1,20 @@
 remote_theme: ksengine/primerkyll@main
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Primerkyll"
+title_separator          : "-"
+subtitle                 : "A Github style Jekyll theme."
+name                     : &name "Kavindu Santhusa" # &name is a YAML anchor which can be *referenced later
+description              : &description "Build your own static site or blog with Jekyll and Primerkyll theme."
+url                      : https://ksengine.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/primerkyll" # the subpath of your site, e.g. "/blog"
+
+github:
+  private: false
+  license:
+    name: Unlicense
+  source:
+    branch: "main"
+    path: "/"
+  repository_url: "https://github.com/ksengine/primerkyll"
